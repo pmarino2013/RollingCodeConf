@@ -4,25 +4,23 @@ html {
 }
 
 /*Para arreglar que el menu no tape los títulos de las secciones*/
-.ancla:before {       /*Inserte un espacio antes del contenido de cada elemento */
-  display: block;       
-  content: " ";       
-  margin-top: -60px;       
-  height: 60px;       
-  visibility: hidden; 
-} 
-
+.ancla:before {
+  /*Inserte un espacio antes del contenido de cada elemento */
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+}
 
 /* Texto para el menú la opcion comprar tickets*/
 .text-rolling {
   color: #61dafb !important;
 }
 
-
 #header img {
   width: 150px;
 }
-
 
 /*main con carousel----------------------------------------------*/
 #main .carousel-inner img {
@@ -52,7 +50,6 @@ html {
   height: 100%;
 }
 
-
 /* Botón del carousel para el texto*/
 .btn-rolling {
   background-color: #61dafb;
@@ -64,14 +61,13 @@ html {
 }
 
 /*Place-time-------------------------------------------*/
-#place-time .container-fluid{
+#place-time .container-fluid {
   background-color: #212529;
-  color:white;
- 
+  color: white;
 }
 
-#place-time img{
-max-width: 100%;
+#place-time img {
+  max-width: 100%;
 }
 
 /*FOOTER---------------------------------------------*/

@@ -22,10 +22,12 @@
 
     <title>Rolling Conf</title>
   </head>
-  <!--Agrego en body las funcionalidades de Scrollspy--> <!--Agrego el data-offset con el tamaño del height-->
+  <!--Agrego en body las funcionalidades de Scrollspy-->
+  <!--Agrego el data-offset con el tamaño del height-->
   <body data-spy="scroll" data-target="#navbarNav" data-offset="64">
     <!--Header-->
-    <header class="sticky-top"> <!--Agrego al header la class stucky para que quede fijo el menu-->
+    <header class="sticky-top">
+      <!--Agrego al header la class stucky para que quede fijo el menu-->
       <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <!--Agregar logo de rolling -->
@@ -58,10 +60,18 @@
                 <a class="nav-link" href="#place-time">El lugar y la fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#conviertete">Conviértete en orador</a>
+                <a class="nav-link" href="#conviertete"
+                  >Conviértete en orador</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-rolling" data-toggle="modal" data-target="#modalCompra" href="#">Comprar tickets</a>
+                <a
+                  class="nav-link text-rolling"
+                  data-toggle="modal"
+                  data-target="#modalCompra"
+                  href="#"
+                  >Comprar tickets</a
+                >
               </li>
             </ul>
           </div>
@@ -109,7 +119,14 @@
                     >Quiero ser speaker</a
                   >
                   <!--Agrego al boton los datos para abrir el modal-->
-                  <button  type="button" data-toggle="modal" data-target="#modalCompra" class="btn btn-rolling" >Comprar Tickets</button>
+                  <button
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#modalCompra"
+                    class="btn btn-rolling"
+                  >
+                    Comprar Tickets
+                  </button>
                 </div>
               </div>
             </div>
@@ -140,7 +157,7 @@
     <!--/main--------------------------------------------------------------------->
 
     <!--Speakers-->
-    
+
     <section id="speaker" class="ancla mt-4">
       <div class="container">
         <div class="row">
@@ -219,75 +236,102 @@
     <!--/Speakers-->
 
     <!--Lugar y fecha Fluido-->
-<section id="place-time" class="ancla">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-lg-6 pl-0 pr-0">
-        <img src="images/rolling_site.jpg" alt="Site">
+    <!--Clase ancla sirve para que el menú no tape el título de la sección-->
+    <section id="place-time" class="ancla">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pl-0 pr-0">
+            <img src="images/rolling_site.jpg" alt="Site" />
+          </div>
+          <div class="col-12 col-lg-6 p-4">
+            <h2>Site Centro - Octubre 2020</h2>
+            <p>
+              RollingCode school es la primera academia de código de Tucumán. La
+              misión es formar a los nuevos profesionales de la tecnología que
+              liderarán el futuro. Con un programa de enseñanza en linea de 6
+              meses los estudiantes aprenden las herramientas necesarias para
+              entrar en la industria del software y crecer como profesionales.
+            </p>
+            <a
+              class="btn btn-outline-light"
+              href="https://rollingcodeschool.com/"
+              target="_blank"
+              >Conoce más</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-lg-6 p-4">
-        <h2>Site Centro - Octubre 2020</h2>
-        <p>
-          RollingCode school es la primera academia de código de Tucumán. La misión es
-formar a los nuevos profesionales de la tecnología que liderarán el futuro. Con un programa 
-de enseñanza en linea de 6 meses los estudiantes aprenden las herramientas necesarias para entrar 
-en la industria del software y crecer como profesionales.
-        </p>
-        <a class="btn btn-outline-light" href="https://rollingcodeschool.com/" target="_blank">Conoce más</a>
-      </div>
-    </div>
-  </div>
-
-</section>
+    </section>
     <!--/Lugar y fecha Fluido-->
 
-<!--Conviertete en speacker-->
-<section id="conviertete" class="ancla pt-3 pb-3">
-  <div class="container">
-    <div class="row">
-      <div class="col text-uppercase text-center ">
-        <small >Conviértete en un </small><h2>Speaker</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col text-center">
-        Anótate como speaker para dar una <abbr data-toggle="tooltip" data-placement="bottom" title="Charla de 5 minutos">charla ignite</abbr>. Cuéntanos de que quieres hablar!
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
-
-        <!--Comienza formulario-->
-        <form>
-          <div class="row">
-            <div class="form-group col-12 col-md-6">
-              <input type="text" class="form-control" placeholder="Nombre">
-            </div>
-            <div class="form-group col-12 col-md-6">
-              <input type="email" class="form-control" placeholder="Correo electrónico">
-            </div>
+    <!--Conviertete en speacker-->
+    <section id="conviertete" class="ancla pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>Conviértete en un </small>
+            <h2>Speaker</h2>
           </div>
-          <div class="form-row">
-            <div class="form-group col">
-              <textarea class="form-control" name="text" rows="3" placeholder="Sobre que quieres hablar..."></textarea>
-              <small class="form-text text-muted">*Recuerda incluir un título a tu charla</small>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <!--Usamos abreviaturas de bootstrap y data-toggle para el tooltips-->
+            Anótate como speaker para dar una
+            <abbr
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Charla de 5 minutos"
+            >
+              charla ignite </abbr
+            >. Cuéntanos de que quieres hablar!
           </div>
-          <div class="form-row">
-            <div class="col-12 col-md-4 offset-md-8">
-              <button class="btn btn-rolling btn-block">Enviar</button>
-            </div>
+        </div>
+        <div class="row">
+          <!--Para centrar el formulario-->
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <!--Comienza formulario-->
+            <form>
+              <div class="row">
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Correo electrónico"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <textarea
+                    class="form-control"
+                    name="text"
+                    rows="3"
+                    placeholder="Sobre que quieres hablar..."
+                  ></textarea>
+                  <small class="form-text text-muted"
+                    >*Recuerda incluir un título a tu charla</small
+                  >
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-12 col-md-4 offset-md-8">
+                  <button class="btn btn-rolling btn-block">Enviar</button>
+                </div>
+              </div>
+            </form>
+            <!------Fin formulario-------------->
           </div>
-        </form>
-        <!------Fin formulario-------------->
+        </div>
       </div>
-    </div>
-
-  </div>
-
-</section>
-<!------/conviertete en orador-->
+    </section>
+    <!------/conviertete en orador-->
 
     <!--Footer-->
     <footer>
@@ -301,13 +345,28 @@ en la industria del software y crecer como profesionales.
       </div>
     </footer>
 
-    <!--Modal--> <!--Cambio el Id-->
-    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!--Modal compra de Tickets-->
+    <!--Cambio el Id-->
+    <div
+      class="modal fade"
+      id="modalCompra"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Compra de Tickets</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Compra de Tickets
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -316,12 +375,19 @@ en la industria del software y crecer como profesionales.
               <div class="form-row">
                 <div class="form-group col">
                   <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Ingresa tu usuario de Gmail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Ingresa tu usuario de Gmail"
+                      aria-label="Recipient's username"
+                      aria-describedby="basic-addon2"
+                    />
                     <div class="input-group-append">
-                      <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                      <span class="input-group-text" id="basic-addon2"
+                        >@gmail.com</span
+                      >
                     </div>
                   </div>
-                 
                 </div>
               </div>
             </form>
@@ -330,16 +396,22 @@ en la industria del software y crecer como profesionales.
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-rolling" data-dismiss="modal">Comprar!</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-rolling" data-dismiss="modal">
+              Comprar!
+            </button>
           </div>
         </div>
       </div>
     </div>
     <!--/Modal-->
 
-    
-   
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -357,10 +429,11 @@ en la industria del software y crecer como profesionales.
       crossorigin="anonymous"
     ></script>
 
+    <!--Script para el tooltip-->
     <script>
       $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+        $('[data-toggle="tooltip"]').tooltip();
+      });
     </script>
   </body>
 </html>
