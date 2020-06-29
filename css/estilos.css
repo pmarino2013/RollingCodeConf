@@ -1,0 +1,93 @@
+/*Efecto scroll*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Para arreglar que el menu no tape los títulos de las secciones*/
+.ancla:before {       /*Inserte un espacio antes del contenido de cada elemento */
+  display: block;       
+  content: " ";       
+  margin-top: -60px;       
+  height: 60px;       
+  visibility: hidden; 
+} 
+
+
+/* Texto para el menú la opcion comprar tickets*/
+.text-rolling {
+  color: #61dafb !important;
+}
+
+
+#header img {
+  width: 150px;
+}
+
+
+/*main con carousel----------------------------------------------*/
+#main .carousel-inner img {
+  max-height: 70vh; /*para que la imagen no sea tan alta*/
+  object-fit: cover; /*La imagen cubra el espacio y no quede estirada*/
+  filter: grayscale(70%); /*aplicando filtro gris a la imagen*/
+}
+
+#carousel {
+  position: relative; /*Covierto carousel en un contenedero relativo*/
+}
+
+#carousel .overlay {
+  position: absolute; /*La posicion del overlay es absoluta*/
+  z-index: 1; /*para que esté encima de las imagenes*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/*Para que el texto este centrado */
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+
+
+/* Botón del carousel para el texto*/
+.btn-rolling {
+  background-color: #61dafb;
+  color: white;
+}
+.btn-rolling:hover {
+  background-color: #41a6c1;
+  color: white;
+}
+
+/*Place-time-------------------------------------------*/
+#place-time .container-fluid{
+  background-color: #212529;
+  color:white;
+ 
+}
+
+#place-time img{
+max-width: 100%;
+}
+
+/*FOOTER---------------------------------------------*/
+
+#footer {
+  background-image: linear-gradient(
+    90deg,
+    rgb(28, 54, 67) 0px,
+    rgb(39, 59, 71) 50%,
+    rgb(30, 83, 114)
+  );
+
+  padding: 10px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+}
